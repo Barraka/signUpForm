@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="left">
+        <div id="logoContainer">
+            <img src="img/logo.jpg" alt="logo" id="logo"><div id="logotext">Yummy<br>Bites</div> 
+        </div>
+    </div>
+    <div id="right">
+        <div id="formHeader">Do you sometimes just <em>feel</em> like taking a bite into a mushy macaron? Go ahead, you're just one click away from your dreams.
+            <p>You <em>know</em> you need it in your life right now.</p>
+        </div>
+        <div id="formBody">
+            <h2>Just a few steps away!</h2>
+            Required fields are marked with <span aria-label="required">*</span>
+            <form action="#" method="post" id="subscriptionForm">
+                <div class="row">
+                    <div class="unit">
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" name="firstname" id="firstname" pattern="[A-Za-z]+">
+                        <div class="errorfield" id="firstnameerror"></div>
+                    </div>
+                
+                    <div class="unit">
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" name="lastname" id="lastname" pattern="[A-Za-z]+">
+                        <div class="errorfield" id="lastnameerror"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="unit">
+                        <label for="email">EMAIL <span aria-label="required" title="required">*</span></label>
+                        <input type="email" name="email" id="email" required>
+                        <div class="errorfield" id="emailerror"></div>
+                    </div>
+                
+                    <div class="unit">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone">
+                        <div class="errorfield" id="phoneerror"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="unit">
+                        <label for="password">PASSWORD <span aria-label="required" title="required">*</span></label>
+                        <input type="password" name="password" id="password" required>
+                        <div class="errorfield" id="passworderror"></div>
+                    </div>
+                    <div class="unit">
+                        <label for="confirm">CONFIRM PASSWORD <span aria-label="required" title="required">*</span></label>
+                        <input type="password" name="confirm" id="confirm" required>
+                        <div class="errorfield" id="confirmerror"></div>
+                    </div>
+                </div>
+                <!-- <button type="submit"></button> -->
+            </form>
+        </div>
+        <div id="formfooter">
+            <button type="submit" form="subscriptionForm">Create Account</button>
+            <br>Already have an account? <a href="#">Log in</a>
+        </div>
+    </div>
+</body>
+</html>
